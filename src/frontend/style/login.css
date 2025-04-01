@@ -37,3 +37,11 @@ body{
     display: flex;
     align-items: center;
 }
+
+back::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160%;
+}

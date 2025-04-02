@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyFily</title>
-    <link rel="stylesheet" href="../style/login.css">
+    <title>Recuperar Senha - MyFily</title>
+    <link rel="stylesheet" href="../style/esqueceu_senha.css">
+
 </head>
 <body>
     <div class="center">
@@ -13,31 +14,32 @@
                 <div class="back">
                     <div class="back-content">
 
-                        <h3 class="heading">Login</h3>
+                        <h3 class="heading">Recuperar Senha</h3>
+
+                        <div class="input-box">
+                            <input type="email" required>
+                            <span>Email</span>
+                        </div>
 
                         <div class="input-box">
                             <input type="text" required>
-                            <span class="user">Email</span>
+                            <span>Código de Verificação</span>
                         </div>
 
                         <div class="input-box">
                             <input type="password" required>
-                            <span>Senha</span>
+                            <span>Nova Senha</span>
                         </div>
 
-                        <div class="bottom">
-                            <div>
-                                <input type="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-text">Guardar login</label>
-                            </div>         
-                            
-                            <a href="esqueceu_senha.html" class="forget">Esqueceu sua senha</a>
+                        <div class="input-box">
+                            <input type="password" required>
+                            <span>Confirmar Nova Senha</span>
                         </div>
 
-                        <button class="btn">Login</button>
+                        <button class="btn">Redefinir Senha</button>
                         
                         <div>
-                            <a href="cadastro_login.html" class="cadastro">Cadastrar-se</a>
+                            <a href="login.html" class="cadastro">Voltar para o Login</a>
                         </div>
 
                     </div>

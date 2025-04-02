@@ -77,9 +77,10 @@ body {
 }
 
 .heading {
+    margin-top: -20px;
     color: #ffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     display: block;
     font-size: 30px;
     font-weight: bold;

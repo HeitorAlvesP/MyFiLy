@@ -8,5 +8,5 @@ const PORT = process.env.PORT || 3000;
 
 startServer().catch(err => console.error('Erro ao iniciar o servidor:', err));
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
+    console.log(`Servidor rodando em http://localhost:${PORT}/login`);
 });

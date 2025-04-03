@@ -42,7 +42,3 @@ export const inicializeDatabase = async () => {
   };
   
   export const getDatabase = () => dbConnection;
-
-
-
-

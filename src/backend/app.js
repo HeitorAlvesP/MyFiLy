@@ -1,8 +1,10 @@
 import express from 'express';
 import { resolve } from 'path';
 import loginRouter from './routes/login_router.js';
-import cadastroLoginRouter from './routes/cadastroLogin_router.js';
-import esqueceuSenha from './routes/esqueceuSenha_router.js';
+// import cadastroLoginRouter from './routes/cadastroLogin_router.js';
+import cadastroLoginRouter from './routes/login_router.js';
+// import esqueceuSenha from './routes/esqueceuSenha_router.js';
+import esqueceuSenha from './routes/login_router.js';
 
 
 const app = express();

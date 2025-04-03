@@ -15,16 +15,20 @@
 
                         <h3 class="heading">Login</h3>
 
-                        <div class="input-box">
-                            <input type="text" required>
-                            <span class="user">Email</span>
-                        </div>
+                        <form id="loginForm">
 
-                        <div class="input-box">
-                            <input type="password" required>
-                            <span>Senha</span>
-                        </div>
+                            <div class="input-box">
+                                <input type="text" required>
+                                <span class="user">Email</span>
+                            </div>
+    
+                            <div class="input-box">
+                                <input type="password" required>
+                                <span>Senha</span>
+                            </div>
 
+                        </form>
+ 
                         <div class="bottom">
                             <div>
                                 <input type="checkbox" id="checkbox">
@@ -45,6 +49,7 @@
             </div>
         </div>
     </div>
+    <script src="../../backend/controllers/login_controller.js"></script>
     <script>
         console.log('frontend/pages/login.html')
     </script>

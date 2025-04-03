@@ -10,11 +10,14 @@ export const realizaLogin = async (req, res) => {
 
     try {
         const user = await db.get(`SELECT * FROM User WHERE email = ? AND senha = ?`, [email, senha]);
+        console.log(user);
 
         if (user) {
+            console.log('Aqui');
             return res.json({ success: true });
             // res.redirect('/html/telas_home/homeAdm.html');
         } else {
+            console.log('Aqui errado')
             return res.status(401).json({ success: false, message: 'Email ou senha incorretos.' });
             // res.status(401).json({ message: 'Email ou senha incorretos.' });   
         }

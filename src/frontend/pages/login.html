@@ -7,49 +7,39 @@
     <link rel="stylesheet" href="../style/login.css">
 </head>
 <body>
-    <div class="center">
-        <div class="card">
-            <div class="content">
-                <div class="back">
-                    <div class="back-content">
-
-                        <h3 class="heading">Login</h3>
-
-                        <form id="loginForm">
-
+    <form id="loginForm"></form>
+        <div class="center">
+            <div class="card">
+                <div class="content">
+                    <div class="back">
+                        <div class="back-content">
+                            <h3 class="heading">Login</h3>
                             <div class="input-box">
                                 <input type="text" required>
                                 <span class="user">Email</span>
                             </div>
-    
                             <div class="input-box">
                                 <input type="password" required>
                                 <span>Senha</span>
                             </div>
-
-                        </form>
- 
-                        <div class="bottom">
+                            <div class="bottom">
+                                <div>
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkbox-text">Guardar login</label>
+                                </div>         
+                                <a href="/pages/esqueceu_senha.html" class="forget">Esqueceu sua senha</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
                             <div>
-                                <input type="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-text">Guardar login</label>
-                            </div>         
-                            
-                            <a href="/pages/esqueceu_senha.html" class="forget">Esqueceu sua senha</a>
+                                <a href="/pages/cadastro_login.html" class="cadastro">Cadastrar-se</a>
+                            </div>
                         </div>
-
-                        <button class="btn">Login</button>
-                        
-                        <div>
-                            <a href="/pages/cadastro_login.html" class="cadastro">Cadastrar-se</a>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="../../backend/controllers/login_controller.js"></script>
+    </form>
+    <script src="../javascript/login.js"></script>
     <script>
         console.log('frontend/pages/login.html')
     </script>

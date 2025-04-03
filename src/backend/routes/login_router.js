@@ -9,13 +9,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 router.get('/login', (req, res) => {
     res.sendFile(join(__dirname, '../../frontend/pages/login.html'));
 });
+router.post('/login', realizaLogin);
 
-router.post('/login', realizaLogin)
 
 router.get('/esqueceuSenha', (req, res) => {
-    const cadastroPath = resolve('src/frontend/pages/');
+    const cadastroPath = resolve('src/frontend/pages/esqueceu_senha.html');
     res.sendFile(cadastroPath);
 });
+
 
 router.get('/cadastro', (req, res) => {
     const cadastroPath = resolve('src/frontend/pages/cadastro_login.html');

@@ -3,8 +3,8 @@ import { resolve } from 'path';
 
 const router = Router();
 
-router.get('/cadastro', (req, res) => {
-    const cadastroPath = resolve('src/frontend/pages/cadastro_login.html');
+router.get('/esqueceuSenha', (req, res) => {
+    const cadastroPath = resolve('src/frontend/pages/');
     res.sendFile(cadastroPath);
 });
 
